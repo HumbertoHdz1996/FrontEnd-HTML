@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body style="background:linear-gradient(30deg, rgb(122, 235, 118),rgb(235, 116, 225), royalblue, indianred, purple);">
+    <center>
+        <img src="./img/Logo.PNG" alt="Logo de pasteleria" height="175"><br>
+        
+        <h1>Aqui va el pedido de tu pastel</h1>
+
+        <h2>Por favor, rellena con tus datos</h2>
+
+        <form action="pedido.js">
+
+            <h3>Información Personal</h3>
+            <label for="nombre">Escribe tu nombre</label><br>
+            <label for="nombre">(Inicia por apellido)</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <br><br>
+
+            <label for="direccion">Escribe tu dirección</label><br>
+            <input type="text" name="direccion" id="direccion" placeholder="Dirección">
+            <br><br>
+
+            <label for="numTel">Escribe tu número de telefono</label><br>
+            <input type="tel" name="numTel" id="numTel" placeholder="10 digitos">
+            <br><br>
+
+            <label for="fecha">¿En que fecha y hora lo desea recibir?</label><br>
+            <input type="datetime-local" name="fecha" id="fecha">
+            <br><br>
+            
+            <label for="seleccion">¿Que pastel quieres?</label><br>
+            <select name="seleccion" id="seleccion">
+                <option value="chocolate">Chocolate</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="fresa">Fresa</option>
+                <option value="cheesecakeZarzamora">Cheesecake de Zarzamora</option>
+            </select>
+            <br><br>
+
+            <h3>Descripción de tu pedido</h3>
+            <label for="cantidad">¿Cuantas rebanadas deseas, o el pastel completo?</label><br>
+            <input type="radio" name="cantidad" id="pastelCompleto" value="Pastel Completo">
+            <label for="cantidad">Pastel completo</label><br>
+            <input type="radio" name="cantidad" id="rebanadas" value="Rebanada(s)">
+            <label for="cantidad">Rebanada(s)</label>
+            <input type="text" name="cantidad" id="numRebanadas" placeholder="Cantidad de rebanadas">
+            <br><br>
+
+            <h3>Toppings</h3>
+            <label for="tops">Escoge cual (o cuales) toppings quieres</label><br>
+            <input type="checkbox" name="top1" id="velas" value="Velas">
+            <label for="top1">Velas</label><br>
+            <input type="checkbox" name="top2" id="chispChoco" value="Chispas de chocolate">
+            <label for="top2">Pistas de Chocolate</label><br>
+            <input type="checkbox" name="top3" id="chispColor" value="Chispas de color">
+            <label for="top3">Pistas de Chocolate</label><br><br>
+
+            <input type="submit">
+            <input type="reset">
+            <br><br>
+            <a href="./Inventario.html">
+                <input type="button" value="Inventario del Chefsito">
+            </a>
+        </form>
+        
+    </center>
+    
+</body>
+</html>
